@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --octo-ink: #0f172a;
+  --octo-navy: #1d3557;
+  --octo-blue: #2f6cb3;
+  --octo-teal: #2a9d8f;
+  --octo-coral: #e76f51;
+  --octo-gold: #f4a261;
+  --octo-sky: #cbe7ff;
+  --octo-mint: #d8f3dc;
+  --octo-surface: #ffffff;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--octo-ink);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(203, 231, 255, 0.95) 0%, rgba(203, 231, 255, 0) 42%),
+    radial-gradient(circle at 90% 85%, rgba(216, 243, 220, 0.95) 0%, rgba(216, 243, 220, 0) 40%),
+    radial-gradient(circle at 55% 8%, rgba(244, 162, 97, 0.22) 0%, rgba(244, 162, 97, 0) 30%),
+    #f4f8ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--octo-navy);
+}
+
+a {
+  color: var(--octo-blue);
+}
+
+a:hover {
+  color: var(--octo-teal);
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-hero {
+  background: linear-gradient(135deg, #ffffff 0%, #f3f9ff 52%, #eefbf7 100%);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.1);
+}
+
+.app-logo {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid rgba(47, 108, 179, 0.24);
+  box-shadow: 0 8px 20px rgba(47, 108, 179, 0.25);
+}
+
+.app-title {
+  color: var(--octo-navy);
+}
+
+.app-subtitle {
+  color: #415a77;
+}
+
+.octofit-nav {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.94) 0%, rgba(231, 245, 255, 0.94) 100%);
+  border: 1px solid rgba(29, 53, 87, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.octofit-nav .navbar-brand {
+  color: var(--octo-navy);
+}
+
+.octofit-nav .nav-link {
+  color: var(--octo-navy);
+  transition: all 0.2s ease;
+}
+
+.octofit-nav .nav-link.active,
+.octofit-nav .nav-link:hover {
+  background: linear-gradient(135deg, var(--octo-navy), var(--octo-blue));
+  color: #fff;
+}
+
+.data-card {
+  border: 1px solid rgba(47, 108, 179, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.card-header {
+  background: linear-gradient(90deg, #edf5ff 0%, #e7faf4 100%);
+}
+
+.table thead th {
+  background: linear-gradient(90deg, #d9ecff 0%, #d5f7e8 100%);
+  color: #17375e;
+  border-bottom: 0;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  --bs-table-accent-bg: rgba(47, 108, 179, 0.04);
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--octo-blue);
+  --bs-btn-border-color: var(--octo-blue);
+  --bs-btn-hover-bg: #235690;
+  --bs-btn-hover-border-color: #235690;
+  --bs-btn-active-bg: #1d4c80;
+  --bs-btn-active-border-color: #1d4c80;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: var(--octo-teal);
+  --bs-btn-border-color: var(--octo-teal);
+  --bs-btn-hover-bg: var(--octo-teal);
+  --bs-btn-hover-border-color: var(--octo-teal);
+  --bs-btn-hover-color: #fff;
+}
+
+.json-cell {
+  max-width: 420px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.endpoint-link {
+  font-size: 0.95rem;
+  color: var(--octo-coral);
+  font-weight: 600;
+}
+
+.endpoint-link:hover {
+  color: #c24e32;
+}
+
+.modal-backdrop.show {
+  opacity: 0.4;
+}
